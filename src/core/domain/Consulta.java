@@ -27,6 +27,14 @@ public class Consulta {
         return paciente;
     }
 
+    public Prontuario getProntuario() {
+        return prontuario;
+    }
+
+    public boolean isPacienteNovo() {
+        return paciente.getProntuarios().isEmpty();
+    }
+
     private java.util.List<ConsultaObserver> observers = new java.util.ArrayList<>();
 
     public void adicionarObserver(ConsultaObserver observer) {

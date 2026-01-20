@@ -8,4 +8,12 @@ public class PlanoSaude {
         this.nome = nome;
         this.numeroCarteira = numeroCarteira;
     }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getNumeroCarteira() {
+        return numeroCarteira;
+    }
 }

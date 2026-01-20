@@ -12,4 +12,20 @@ public class Prescricao {
         this.administracao = administracao;
         this.tempoUso = tempoUso;
     }
+
+    public Medicamento getMedicamento() {
+        return medicamento;
+    }
+
+    public String getDosagem() {
+        return dosagem;
+    }
+
+    public String getAdministracao() {
+        return administracao;
+    }
+
+    public String getTempoUso() {
+        return tempoUso;
+    }
 }
