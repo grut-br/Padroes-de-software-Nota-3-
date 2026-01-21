@@ -156,6 +156,5 @@ O sistema está preparado para evoluir com:
 - Suporte a múltiplas clínicas e médicos
 - Geração de relatórios e estatísticas
 
-## Autor
-
-Desenvolvido como atividade da disciplina de Padrões de Software e Refatoração - IFMA
+## Autores
+Jordan Feliphe Rubim , Pedro Lucas Reis e Rodrigo Cesar Costa
