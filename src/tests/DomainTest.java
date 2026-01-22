@@ -15,11 +15,9 @@ public class DomainTest {
         Medico medico = new Medico("Dr. Silva", "12345");
         Consulta consulta = new Consulta(LocalDateTime.now(), paciente, medico);
 
-        // 1. Deve realizar consulta com sucesso
         Prontuario p1 = consulta.realizarConsulta();
         TestInfo.assertNotNull(p1, "Consulta deve gerar um prontuário");
 
-        // 2. Não deve permitir realizar a mesma consulta duas vezes
         try {
             consulta.realizarConsulta();
             throw new RuntimeException("❌ FALHA: Deveria ter lançado exceção ao realizar consulta duplicada");

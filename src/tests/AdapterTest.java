@@ -21,11 +21,9 @@ public class AdapterTest {
 
         repo.salvar(1L, c);
 
-        // Testar busca
         Optional<Consulta> found = repo.buscarPorId(1L);
         TestInfo.assertTrue(found.isPresent(), "Deve encontrar consulta salva");
 
-        // Testar listagem
         TestInfo.assertEquals(1, repo.listarTodas().size(), "Deve listar 1 consulta");
     }
 }

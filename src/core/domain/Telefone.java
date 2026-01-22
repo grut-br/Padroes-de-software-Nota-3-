@@ -8,4 +8,12 @@ public class Telefone {
         this.numero = numero;
         this.responsavel = responsavel;
     }
+
+    public String getNumero() {
+        return numero;
+    }
+
+    public String getResponsavel() {
+        return responsavel;
+    }
 }

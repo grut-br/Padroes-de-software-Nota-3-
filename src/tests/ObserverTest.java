@@ -16,7 +16,6 @@ public class ObserverTest {
         Consulta consulta = new Consulta(LocalDateTime.now(), new Paciente("Pedro", "Pai", null, "M"),
                 new Medico("Dr. X", "999"));
 
-        // Registrar um observer de teste
         consulta.adicionarObserver(event -> {
             notificacaoRecebida = true;
             System.out.println("   [Teste] Observer chamado para consulta de: "

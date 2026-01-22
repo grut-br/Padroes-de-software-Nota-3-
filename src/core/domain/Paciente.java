@@ -28,6 +28,46 @@ public class Paciente {
         return nomeCrianca;
     }
 
+    public String getNomeResponsavel() {
+        return nomeResponsavel;
+    }
+
+    public LocalDate getDataNascimento() {
+        return dataNascimento;
+    }
+
+    public String getSexo() {
+        return sexo;
+    }
+
+    public Endereco getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
+    }
+
+    public List<Telefone> getTelefones() {
+        return telefones;
+    }
+
+    public void adicionarTelefone(Telefone telefone) {
+        this.telefones.add(telefone);
+    }
+
+    public PlanoSaude getPlanoSaude() {
+        return planoSaude;
+    }
+
+    public void setPlanoSaude(PlanoSaude planoSaude) {
+        this.planoSaude = planoSaude;
+    }
+
+    public List<Prontuario> getProntuarios() {
+        return prontuarios;
+    }
+
     public void adicionarProntuario(Prontuario prontuario) {
         this.prontuarios.add(prontuario);
     }
